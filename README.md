@@ -22,7 +22,7 @@
 * 100% Sitio Web - ( 10% por cada actividad )
   * Mínimo 4 secciones.
   * Versión móvil y escritorio
-  * Entrega: Lunes 17 de septiembre a las 11:59:59pm, vía we transfer, dropbox o drive **jonmircha@gmail.com**
+  * Entrega: Lunes 17 de septiembre a las 11:59:59pm, vía correo, wetransfer, dropbox o google drive, etc a **jonmircha@gmail.com**
 
 | Escala de Calificaciones |
 | -- |
@@ -38,7 +38,6 @@
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
 | 1. Temática y Mapa de Navegación (clase 2) | ? | ? | ? | ? | ? | ? |
-| 1. Maquetar una hoja de vida (CV) (clase 2) | ? | ? | ? | ? | ? | ? |
 
 ## Teoría
 
