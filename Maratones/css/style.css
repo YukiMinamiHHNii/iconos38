@@ -1,0 +1,18 @@
+/* ********** Sticky Footer ********** */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+/* ********** Sticky Footer ********** */
+
+/* ********** CSS de prueba ********** */
+.col {
+  border: thin solid #000;
+}
+/* ********** CSS de prueba ********** */
+
