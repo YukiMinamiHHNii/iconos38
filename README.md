@@ -39,7 +39,7 @@
 | -- | -- | -- | -- | -- | -- | -- |
 | 1. Definir Wireframes mobile/desktop del home (clase 3) | ? | ? | ? | ? | ? | ? |
 | 1. Definir Layout mobile/desktop de partes comunes (clase 3) | ? | ? | ? | ? | ? | ? |
-| 1. Temática y Mapa de Navegación (clase 2) | ? | ? | ? | ? | ? | ? |
+| 1. Temática y Mapa de Navegación (clase 2) | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 |
 
 ## Teoría
 
