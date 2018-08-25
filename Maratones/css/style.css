@@ -18,6 +18,8 @@
 
   --link-color: var(--main-color);
   --link-hover-color: var(--second-color);
+
+  --nav-height: 64px;
 }
 /* ********** Custom Properties ********** */
 
@@ -27,11 +29,51 @@ html {
   color: var(--text-color);
   background-color: var(--bg-color);
 }
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all .3s ease-out;
+}
+
+a:hover { color: var(--link-hover-color); }
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
 /* ********** Reset Styles ********** */
 
 /* ********** Navbar Materialize ********** */
 nav {
   background-color: var(--second-color);
+  height: var(--nav-height);
+  line-height: var(--nav-height);
+}
+
+.brand-logo img {
+  height: var(--nav-height);
+}
+
+.sidenav-trigger:hover { color: var(--main-color); }
+
+.sidenav {
+  top: var(--nav-height);
+  background-color: var(--second-modal-color);
+}
+
+.sidenav li > a,
+.desktop-nav  a,
+.desktop-nav li > a {
+  color: var(--main-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidenav li > a:hover,
+.desktop-nav li > a:hover {
+  background-color: var(--main-modal-color);
+  color: var(--bg-color);
 }
 /* ********** Navbar Materialize ********** */
 
@@ -45,7 +87,40 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.page-footer {
+  color: var(--text-color);
+  background-color: var(--bg-alternate-color);
+}
+
+@media screen and (min-width: 993px) {
+  .page-footer .row {
+    display: flex;
+    align-items: center;
+  }
+}
 /* ********** Sticky Footer ********** */
+
+/* ********** SocialMedia ********** */
+.SocialMedia a {
+  font-size: 1.5rem;
+  padding: 0 2vw;
+}
+/* ********** SocialMedia ********** */
+
+/* ********** Sentence ********** */
+.Sentence {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3vw;
+}
+
+.Sentence blockquote {
+  padding-left: 0;
+  border-left: none;
+}
+/* ********** Sentence ********** */
 
 /* ********** CSS de prueba ********** */
 .col {
