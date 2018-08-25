@@ -40,8 +40,8 @@
 | -- | -- | -- | -- | -- | -- | -- |
 | 5. Grid y Maquetación de todas las secciones del proyecto (clase 4) | ? | ? | ? | ? | ? | ? |
 | 4. Ejercicio Maquetación Mujeres / El más veloz (clase 4) | ? | ? | ? | ? | ? | ? |
-| 3. Definir Wireframes mobile/desktop del home (clase 3) | ? | ? | ? | ? | ? | ? |
-| 2. Definir Layout mobile/desktop de partes comunes (clase 3) | ? | ? | ? | ? | ? | ? |
+| 3. Definir Wireframes mobile/desktop del home (clase 3) | 😨 | 😉 | 😉 | 🤓 | 🙄 | 😉 |
+| 2. Definir Layout mobile/desktop de partes comunes (clase 3) | 😨 | 😉 | 😉 | 🤓 | 🙄 | 😉 |
 | 1. Temática y Mapa de Navegación (clase 2) | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 |
 
 ## Teoría
