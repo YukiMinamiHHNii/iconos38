@@ -22,6 +22,7 @@
 * 100% Sitio Web - ( 10% por cada actividad )
   * Mínimo 4 secciones.
   * Versión móvil y escritorio
+  * Personalización de Estilos y Marca.
   * Entrega: Lunes 17 de septiembre a las 11:59:59pm, vía correo, wetransfer, dropbox o google drive, etc a **jonmircha@gmail.com**
 
 | Escala de Calificaciones |
@@ -37,8 +38,10 @@
 
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
-| 1. Definir Wireframes mobile/desktop del home (clase 3) | ? | ? | ? | ? | ? | ? |
-| 1. Definir Layout mobile/desktop de partes comunes (clase 3) | ? | ? | ? | ? | ? | ? |
+| 5. Grid y Maquetación de todas las secciones del proyecto (clase 4) | ? | ? | ? | ? | ? | ? |
+| 4. Ejercicio Maquetación Mujeres / El más veloz (clase 4) | ? | ? | ? | ? | ? | ? |
+| 3. Definir Wireframes mobile/desktop del home (clase 3) | ? | ? | ? | ? | ? | ? |
+| 2. Definir Layout mobile/desktop de partes comunes (clase 3) | ? | ? | ? | ? | ? | ? |
 | 1. Temática y Mapa de Navegación (clase 2) | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 |
 
 ## Teoría

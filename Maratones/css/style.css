@@ -122,9 +122,27 @@ main {
 }
 /* ********** Sentence ********** */
 
+/* ********** MarathonHistory ********** */
+.MarathonHistory .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.MarathonHistory .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.MarathonHistory img {
+  flex: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+/* ********** MarathonHistory ********** */
+
 /* ********** CSS de prueba ********** */
 .col {
-  border: thin solid #000;
+  /* border: thin solid #000; */
 }
 /* ********** CSS de prueba ********** */
 

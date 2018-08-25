@@ -1,0 +1,33 @@
+El más Veloz
+  Título: Eluid Kipchoge
+  Texto 1:
+    No, no es Flash, tampoco Usain Bolt, él es un Velocista, especialista en cortas distancias en el menor tiempo posible; pero para ser el más rápido se requiere resistencia y velocidad constante en largas distancias que sólo un Fondista puede lograr.
+  Texto 2:
+    Por naturaleza el ser humano es un corredor de fondo, la manera en que cazaban nuestros ancestros era persiguiendo a la presa hasta matarla de cansancio. En los último años los maratonistas profesionales se han obsesionado por reducir el tiempo de la maratón a menos de 2 horas.
+
+    El 6 de mayo de 2017 el keniata Eluid Kipchoge en complicidad con Nike y otros corredores, realizaron un experimento llamado Breaking 2, con el objetivo de lograr la hazaña.
+  Texto 3:
+    El evento se realizo en el autódromo de Monza, en Italia. Kipchoge corrió la distancia de 42.195km en 2:00:25hrs. Aunque le faltaron 26 segundos y el evento no fue oficial, esta hazaña lo convierte en el hombre más rápido vivo.
+
+  Imagen 1: eluid-kipchoge-1.jpg
+  Imagen 2: eluid-kipchoge-2.jpg
+  Imagen 3: eluid-kipchoge-3.jpg
+
+  Video:
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V2ZLG-Fij_4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+Mujeres
+  Título: Kathrine Switzer
+  Texto 1:
+    Kathrine Switzer fue la primera mujer en la historia en correr una maratón. Desafió las normas establecidas cuando en 1967 se inscribió como KV Switzer y cruzó la línea de salida de la Maratón de Boston con el número 261 como si fuera un corredor más.
+  Texto 2:
+    Pasó a la historia cuando uno de los jueces a mitad de la carrera se dio cuenta y saltó tras ella para detenerla, mientras que su entrenador y su novio la defendían de éste, permitiéndole completar la carrera con un tiempo de 4 horas y 20 minutos. p 50 años después y teniendo 70, en 2017 regreso a correr la maratón de Boston con su mítico número 261.
+  Texto 3:
+    Gracias a ella, a partir de 1972, las mujeres tuvieron derecho a correr Maratones. También fue promotora para lograr que se abriera la categoría femenil para la distancia en Juegos Olímpicos, meta que se conquistó en 1984.
+
+  Imagen 1: kathrine-switzer-1.jpg
+  Imagen 2: kathrine-switzer-2.jpg
+  Imagen 3: kathrine-switzer-3.jpg
+
+  Video:
+    <iframe src="https://www.youtube.com/embed/fOGXvBAmTsY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
