@@ -1,3 +1,40 @@
+/* ********** Custom Properties ********** */
+:root {
+  --main-font: 'Raleway';
+  --alternate-font: sans-serif;
+
+  --main-color: #0096D9;
+  --main-modal-color: rgba(0, 150, 217, .75);
+  --second-color: #171226;
+  --second-modal-color: rgba(23, 18, 38, .75);
+
+  --bg-color: #FFF;
+  --bg-modal-color: rgba(0, 0, 0, .5);
+  --bg-alternate-color: #F3F3F3;
+  --border-color: #DDD;
+
+  --text-color: #333;
+  --title-color: var(--second-color);
+
+  --link-color: var(--main-color);
+  --link-hover-color: var(--second-color);
+}
+/* ********** Custom Properties ********** */
+
+/* ********** Reset Styles ********** */
+html {
+  font-family: var(--main-font), var(--alternate-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+/* ********** Reset Styles ********** */
+
+/* ********** Navbar Materialize ********** */
+nav {
+  background-color: var(--second-color);
+}
+/* ********** Navbar Materialize ********** */
+
 /* ********** Sticky Footer ********** */
 body {
   display: flex;
