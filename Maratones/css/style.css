@@ -142,7 +142,35 @@ main {
 
 /* ********** CSS de prueba ********** */
 .col {
-  /* border: thin solid #000; */
+  /* border: thin solid var(--main-color); */
 }
 /* ********** CSS de prueba ********** */
+
+/* label color */
+   .input-field label {
+     color: var(--main-color);
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: var(--main-color);
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid var(--main-color);
+     box-shadow: 0 1px 0 0 var(--main-color);
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid var(--main-color);
+     box-shadow: 0 1px 0 0 var(--main-color);
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid var(--main-color);
+     box-shadow: 0 1px 0 0 var(--main-color);
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: var(--main-color);
+   }
 
