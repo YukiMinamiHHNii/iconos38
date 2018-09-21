@@ -8,56 +8,66 @@
 
 ## Estudiantes
 
-* Verónica - veronicabadillo@yahoo.com.mx
-* Isabel - isa.baezg@gmail.com
-* Hugo - hugo.color2018@gmail.com
-* Oscar - oscaryordi@hotmail.com
-* Ricardo - ricardo.bugarin@gmail.com
-* Ignacio - ipineda74@msn.com
+* Verónica
+  * veronicabadillo@yahoo.com.mx
+  * [Drive]()
+* Isabel
+  * isa.baezg@gmail.com
+  * [Drive]()
+* Hugo
+  * hugo.color2018@gmail.com
+  * [Drive]()
+* Oscar
+  * oscaryordi@hotmail.com
+  * [Drive]()
+* Ricardo
+  * ricardo.bugarin@gmail.com
+  * [Drive]()
+* Ignacio
+  * ipineda74@msn.com
+  * [Drive]()
 
-## Materia: Estructura para el Diseño de Interfaces
+## Materias:
+
+### Seminario de Lenguajes de Programación (12pm a 4:30pm)
+
+* Sábado 22/Sep/2018
+* Sábado 29/Sep/2018
+* Sábado 13/Oct/2018
+* Sábado 20/Oct/2018
+
+### Programación Web Avanzada (12pm a 4pm)
+
+* Sábado 27/Oct/2018
+* Sábado 03/Nov/2018
+* Sábado 10/Nov/2018
+* Sábado 17/Nov/2018
+* Sábado 24/Nov/2018
+
+### Sitios Web Dinámicos y Bases de Datos (12pm a 4pm)
+
+* Sábado 08/Dic/2018
+* Sábado 15/Dic/2018
+* Sábado 22/Dic/2018
+* Sábado 12/Ene/2019
+* Sábado 19/Ene/2019
+
+## Objetivo:
+
+Al finalizar del cuatrimestre el estudiante desarrollará una aplicación que interactue Frontend, Backend y Base de Datos.
 
 ## Evaluación:
 
-* 100% Sitio Web - ( 10% por cada actividad )
-  * Mínimo 4 secciones.
-  * Versión móvil y escritorio
-  * Personalización de Estilos y Marca.
-  * Entrega: Lunes 17 de septiembre a las 11:59:59pm, vía correo, wetransfer, dropbox o google drive, etc a **jonmircha@gmail.com**
-
-| Escala de Calificaciones |
-| -- |
-| 🤓 - ñoño |
-| 😉- muy bien |
-| 🤔- ookeeeyyyy |
-| 😒- mmm... te la compro |
-| 🙄- really??? |
-| 😨- vas a llorar sangre |
+* 100% Actividades (Evaluación continua)
+  * Evaluación Parcial 1 (20/Oct/2018)
+  * Evaluación Parcial 2 (24/Nov/2018)
+  * Evaluación Parcial 3 (19/Ene/2019)
+* Entrega Final de Proyecto:
+  * Sábado 19 de Enero 2019 a las 02:59:59pm
+  * Entregar en horario de clase vía correo, dropbox, drive, wetransfer, etc. al correo jonmircha@gmai.com
 
 ## Actividades
 
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
-| 5. Grid y Maquetación de todas las secciones del proyecto (clase 4) | 🤓 | 🤔 | 😒 | 🤓 | 😉 | 🤓 |
-| 4. Ejercicio Maquetación Mujeres / El más veloz (clase 4) | 🤓 | 🤓 | 😉 | 🤓 | 😨 | 😨 |
-| 3. Definir Wireframes mobile/desktop del home (clase 3) | 😨 | 😉 | 😉 | 🤓 | 🙄 | 😉 |
-| 2. Definir Layout mobile/desktop de partes comunes (clase 3) | 😨 | 😉 | 😉 | 🤓 | 🙄 | 😉 |
-| 1. Temática y Mapa de Navegación (clase 2) | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 | 🤓 |
-
-## Teoría
-
-### Frameworks
-
-* [960 Grid System](https://960.gs/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Foundation](https://foundation.zurb.com/)
-* [Materialize](https://materializecss.com/)
-* [Pure CSS](https://purecss.io/)
-* [Semantic UI](https://semantic-ui.com/)
-* [Flexbox Grid](http://flexboxgrid.com/)
-* [Responsimple](https://jonmircha.github.io/responsimple/)
-* [EDgrid](http://ed-grid.com/)
-* [MUI](https://www.muicss.com/)
-* [Ink](http://ink.sapo.pt/)
-* [Skeleton](http://getskeleton.com/)
-* [jQueryMobile](https://jquerymobile.com/)
+| 1. ¿Qué proyecto voy a desarrollar? (Lógica de Negocios y Modelo de datos)  (clase 2) | ? | ? | ? | ? | ? | ? |
