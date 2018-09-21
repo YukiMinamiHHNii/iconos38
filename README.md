@@ -70,4 +70,9 @@ Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que int
 
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
+| **TERCER PARCIAL** | ? | ? | ? | ? | ? | ? |
+| 1. ... | ? | ? | ? | ? | ? | ? |
+| **SEGUNDO PARCIAL** | ? | ? | ? | ? | ? | ? |
+| 1. ... | ? | ? | ? | ? | ? | ? |
+| **PRIMER PARCIAL** | ? | ? | ? | ? | ? | ? |
 | 1. Lógica de Negocios del Proyecto a desarrollar (clase 2) | ? | ? | ? | ? | ? | ? |
