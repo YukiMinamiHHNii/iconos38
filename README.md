@@ -54,7 +54,7 @@
 
 ## Objetivo:
 
-Al finalizar del cuatrimestre el estudiante desarrollará una aplicación que interactue Frontend, Backend y Base de Datos.
+Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que interactue Frontend, Backend y Base de Datos.
 
 ## Evaluación:
 
