@@ -75,4 +75,4 @@ Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que int
 | **SEGUNDO PARCIAL** | ? | ? | ? | ? | ? | ? |
 | 1. ... | ? | ? | ? | ? | ? | ? |
 | **PRIMER PARCIAL** | ? | ? | ? | ? | ? | ? |
-| 1. Lógica de Negocios del Proyecto a desarrollar (clase 2) | ? | ? | ? | ? | ? | ? |
+| 1. Lógica de Negocios del Proyecto a desarrollar (clase 2). | ? | ? | ? | ? | ? | ? |
