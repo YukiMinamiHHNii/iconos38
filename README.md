@@ -70,4 +70,4 @@ Al finalizar del cuatrimestre el estudiante desarrollará una aplicación que in
 
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
-| 1. ¿Qué proyecto voy a desarrollar? (Lógica de Negocios y Modelo de datos)  (clase 2) | ? | ? | ? | ? | ? | ? |
+| 1. ¿Qué proyecto voy a desarrollar?, Lógica de Negocios y Modelo de datos  (clase 2) | ? | ? | ? | ? | ? | ? |
