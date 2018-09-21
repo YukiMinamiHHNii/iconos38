@@ -70,4 +70,4 @@ Al finalizar del cuatrimestre el estudiante desarrollará una aplicación que in
 
 | Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
 | -- | -- | -- | -- | -- | -- | -- |
-| 1. Lógica de Negocios del Proyacto (clase 2) | ? | ? | ? | ? | ? | ? |
+| 1. Lógica de Negocios del Proyecto a desarrollar (clase 2) | ? | ? | ? | ? | ? | ? |
