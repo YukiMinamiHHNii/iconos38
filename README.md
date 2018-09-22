@@ -66,5 +66,5 @@ Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que int
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **PRIMER PARCIAL** | (-1) | (+1) | (-1) |
-| 2. Investigar los siguientes conceptos: ¿Qué es una Variable? * ¿Qué es una Función? * ¿Qué es un Tipo de Dato en JS? * Tipos de Datos en JS * ¿Qué es una Función Anónima AutoEjecutable (IIFE) en JS? * ¿Qué es Node.js? (clase 2). | ? | ? | ? |
+| 2. Investigar los siguientes conceptos:<br> * ¿Qué es una Variable?<br>* ¿Qué es una Función?<br>* ¿Qué es un Tipo de Dato en JS?<br>* Tipos de Datos en JS<br>* ¿Qué es una Función Anónima Auto Ejecutable (IIFE) en JS?<br>* ¿Qué es Node.js?<br>(clase 2). | ? | ? | ? |
 | 1. Lógica de Negocios del Proyecto a desarrollar<br>(clase 2). | ? | ? | ? |
