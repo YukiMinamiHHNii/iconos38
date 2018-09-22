@@ -8,23 +8,14 @@
 
 ## Estudiantes
 
-* Verónica
-  * veronicabadillo@yahoo.com.mx
-  * [Drive]()
 * Isabel
   * isa.baezg@gmail.com
-  * [Drive]()
-* Hugo
-  * hugo.color2018@gmail.com
   * [Drive]()
 * Oscar
   * oscaryordi@hotmail.com
   * [Drive]()
 * Ricardo
   * ricardo.bugarin@gmail.com
-  * [Drive]()
-* Ignacio
-  * ipineda74@msn.com
   * [Drive]()
 
 ## Materias:
@@ -68,11 +59,12 @@ Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que int
 
 ## Actividades
 
-| Actividad | Verónica | Isabel | Oscar | Ricardo | Hugo | Ignacio |
+| Actividad | Isabel | Oscar | Ricardo |
 | -- | -- | -- | -- | -- | -- | -- |
-| **TERCER PARCIAL** | ? | ? | ? | ? | ? | ? |
-| 1. ... | ? | ? | ? | ? | ? | ? |
-| **SEGUNDO PARCIAL** | ? | ? | ? | ? | ? | ? |
-| 1. ... | ? | ? | ? | ? | ? | ? |
-| **PRIMER PARCIAL** | ? | ? | ? | ? | ? | ? |
-| 1. Lógica de Negocios del Proyecto a desarrollar (clase 2). | ? | ? | ? | ? | ? | ? |
+| **TERCER PARCIAL** | ? | ? | ? |
+| 1. ... | ? | ? | ? |
+| **SEGUNDO PARCIAL** | ? | ? | ? |
+| 1. ... | ? | ? | ? |
+| **PRIMER PARCIAL** | (-1) | (+1) | (-1) |
+| 2. ¿Qué es una Variable?<br>¿Qué es una Función?<br>¿Qué es un Tipo de Dato en JS?<br>Tipos de Datos en JS<br>¿Qué es una Función Anónima AutoEjecutable (IIFE)?<br>¿Qué es Node.js?<br>(clase 2). | ? | ? | ? |
+| 1. Lógica de Negocios del Proyecto a desarrollar<br>(clase 2). | ? | ? | ? |
