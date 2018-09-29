@@ -241,6 +241,62 @@ parImpar()
   <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/this-is-javascript.jpg">
   <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/jsvsjava.jpg">
   <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/java-vs-javascript.jpg">
+  <script>
+    //Comentario de una línea
+    /*
+      Comentario
+      de
+      varias
+      lineas
+    */
+    //Declaración de una función
+    function parImpar() {
+      //Declaración y asignación de variables
+      let numero = prompt('Ingresa un número'),
+        modulo = numero % 2,
+        par = 'El número: ' + numero + ' es Par',
+        impar = `El número: ${numero} es Impar`
+
+
+      /*
+      Cadenas de texto
+      "hola mundo"
+      'hola mundo'
+      Concatenación +
+        'El número: ' + numero + ' es Par'
+      Template String + Interpolación de variables
+        `El número: ${numero} es Impar`
+      */
+
+      /*
+       Operador ternario
+       (condición) ? verdadera : falsa
+       simplificación de un if - else
+
+       if (condición) {
+         verdadera
+         .......
+         ....
+       } else {
+         falsa
+         .....
+       }
+       */
+      /*
+      Asignación:
+        modulo = numero % 2
+      Comparación de valores:
+        modulo == 0 - mala práctica
+      Comparción de valor y tipo de dato
+        modulo === 0 - buena práctica
+      */
+      //return (modulo === 0) ? par : impar
+      return (modulo === 1) ? impar : par
+    }
+
+    //Los parenresís en programación significan Invocación o Ejecución
+    alert(parImpar())
+  </script>
 </body>
 
 </html>
