@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de programación en JavaScript</title>
+  <style>
+    :root {
+      --main-font: sans-serif;
+      --font-size: 24px;
+      --line-height: 1.6;
+      --main-color: #F0DB4F;
+      --second-color: #2B2B2B;
+    }
+
+    html {
+      font-family: var(--main-font);
+      font-size: var(--font-size);
+      line-height: var(--line-height);
+    }
+
+    body {
+      width: 80%;
+      margin: auto;
+    }
+
+    a {
+      color: var(--second-color);
+      transition: all .3s ease-out;
+    }
+
+    a:hover {
+      color: var(--main-color);
+    }
+
+    pre {
+      padding: 1rem;
+      background-color: var(--second-color);
+      color: var(--main-color);
+      overflow-x: auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      padding: .5rem 1rem;
+      background-color: var(--main-color);
+      color: var(--second-color);
+    }
+
+    h1,
+    h3 {
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      max-width: 70%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fundamentos de programación en JavaScript</h1>
+  <h2>Para comenzar</h2>
+  <ul>
+    <li>
+      <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Documentación JavaScript en MDN</a>
+    </li>
+    <li>
+      <a href="https://leanpub.com/javascript-inspirate" target="_blank">Libro introductorio: JavaScript, ¡Inspírate!</a>
+    </li>
+    <li>
+      <a href="http://eloquentjavascript.net/" target="_blank">Libro para aprender en serio: Eloquent JavaScript</a>
+    </li>
+    <li>
+      <a href="https://www.w3schools.com/" target="_blank">Consultas de primera mano</a>
+    </li>
+    <li>
+      <a href="https://standardjs.com/readme-esla.html" target="_blank">JavaScript Standard Style</a>
+    </li>
+    <li>
+      Usa Vanilla JS (JavaScript puro)
+      <ul>
+        <li>
+          <a href="https://plainjs.com/" target="_blank">plain JS</a>
+        </li>
+        <li>
+          <a href="http://youmightnotneedjquery.com/" target="_blank">Tal vez no necesitas usar jQuery</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h2>Escritura de código</h2>
+  <ul>
+    <li>
+      Usa
+      <b>
+        <i>snake_case</i>
+      </b> en:
+      <ul>
+        <li>Archivos:
+          <b>
+            <code>mi_archivo_javascript.js</code>
+          </b>
+        </li>
+      </ul>
+    </li>
+    <br>
+    <li>
+      Usa
+      <b>
+        <i>UPPER_CASE</i>
+      </b> en:
+      <ul>
+        <li>
+          Constantes:
+          <br>
+          <b>
+            <code><pre>
+const UNA_CONSTANTE = 'Soy una constante',
+  PI = 3.141592653589793
+</pre></code>
+          </b>
+        </li>
+      </ul>
+    </li>
+    <br>
+    <li>
+      Usa
+      <b>
+        <i>UpperCamelCase</i>
+      </b> en:
+      <ul>
+        <li>
+          Clases:
+          <br>
+          <b>
+            <code><pre>
+class Humano {
+  constructor (nombre, genero) {
+    this.nombre = nombre
+    this.genero = genero
+  }
+
+  miNombreEs () {
+    return `Mi nombre es ${this.nombre}`
+  }
+}</pre></code>
+          </b>
+        </li>
+      </ul>
+    </li>
+    <br>
+    <li>
+      Usa
+      <b>
+        <i>lowerCamelCase</i>
+      </b> en:
+      <ul>
+        <li>
+          Objetos:
+          <br>
+          <b>
+            <code><pre>
+const unObjeto = {
+  nombre: 'Jonathan',
+  email: 'jonmircha@gmail.com'
+}</pre></code>
+          </b>
+        </li>
+        <li>
+          Primitivos:
+          <br>
+          <b>
+            <code><pre>
+let unaCadena = 'Hola Mundo',
+  unNumero = 19,
+  unBoolean = true</pre></code>
+          </b>
+        </li>
+        <li>
+          Funciones:
+          <br>
+          <b>
+            <code><pre>
+function holaMundo (nombre) {
+  alert(`Hola mundo ${nombre}`)
+}
+holaMundo('Jonathan')</pre></code>
+          </b>
+        </li>
+        <li>
+          Instancias:
+          <br>
+          <b>
+            <code><pre>
+const ajax = new XMLHttpRequest(),
+  jon = new Humano('Jonathan', 'Hombre')</pre></code>
+          </b>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h2>Palabras reservadas</h2>
+  <div>
+    <pre><code>
+  A: abstract
+  B: boolean, break, byte
+  C: case, catch, char, class, const, continue
+  D: debugger, default, delete, do, double
+  E: else, enum, export, extends
+  F: false, final, finally, float, for, function
+  G: goto
+  I: if, implements, import, in, instanceof, int, interface
+  L: long
+  N: native, new, null
+  P: package, private, protected, public
+  R: return
+  S: short, static, super, switch, synchronized
+  T: this, throw, throws, transient, true, try, typeof
+  V: var, volatile, void
+  W: while, with
+  </code></pre>
+  </div>
+  <h2>Ordenamiento de código</h2>
+  <ol>
+    <li>
+      <b>IMPORTACIÓN DE MÓDULOS</b>
+    </li>
+    <li>
+      <b>DECLARACIÓN DE VARIABLES</b>
+    </li>
+    <li>
+      <b>DECLARACIÓN DE FUNCIONES</b>
+    </li>
+    <li>
+      <b>EJECUCIÓN DE CÓDIGO</b>
+    </li>
+  </ol>
+</body>
+
+</html>

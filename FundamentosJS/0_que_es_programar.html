@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación y JavaScript</title>
+  <style>
+    :root {
+      --main-font: sans-serif;
+      --font-size: 24px;
+      --line-height: 1.6;
+      --main-color: #F0DB4F;
+      --second-color: #2B2B2B;
+    }
+
+    html {
+      font-family: var(--main-font);
+      font-size: var(--font-size);
+      line-height: var(--line-height);
+    }
+
+    body {
+      width: 80%;
+      margin: auto;
+    }
+
+    a {
+      color: var(--second-color);
+      transition: all .3s ease-out;
+    }
+
+    a:hover {
+      color: var(--main-color);
+    }
+
+    pre {
+      padding: 1rem;
+      background-color: var(--second-color);
+      color: var(--main-color);
+      overflow-x: auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      padding: .5rem 1rem;
+      background-color: var(--main-color);
+      color: var(--second-color);
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      max-width: 70%;
+      height: auto;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section>* {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>Programación y JavaScript</h1>
+  </section>
+  <section>
+    <h2>¿Qué es la Programación?</h2>
+  </section>
+  <section>
+    <div>
+      <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/def-programar.png">
+    </div>
+    <div>
+      <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/def-programacion.png">
+    </div>
+  </section>
+  <section>
+    <h2>La gente cree que programar es difícil:</h2>
+    <ul>
+      <li>
+        <b>MALOS</b> Profesores.</li>
+      <li>Programadores
+        <b>SOBERBIOS</b>.
+      </li>
+      <li>
+        <b>HUMANOS</b> que
+        <b>NO</b> les gusta
+        <b>PENSAR</b> y
+        <b>ANALIZAR</b>.
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>La Programación es:</h2>
+    <ul>
+      <li>Intuitiva e inherente a los humanos, como los sentimientos.</li>
+      <li>Las cosas intuitivas se van a la memoria muscular, donde no se necesita pensar, se ejecuta en automático,
+        como respirar.</li>
+      <li>Desde que te levantas estás programando.</li>
+      <li>Debería enseñarse desde los estudios primarios como las Matemáticas, las Ciencias Naturales, el Civismo, los
+        Idiomas,
+        etc.
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h3>"PROGRAMAR es el FLUJO de ALGO que se PROCESA, se TRANSFORMA y TERMINA de OTRO MODO."</h3>
+  </section>
+  <section>
+    <ul>
+      <li>Debemos PENSAR como HUMANOS y NO como MÁQUINAS.</li>
+      <li>Debemos entender el FLUJO de lo que se quiere hacer, para después EJECUTAR los PROCESOS que controlarán dicho
+        FLUJO.</li>
+      <li>NUNCA trates de ejecutar PROCESOS, sin antes tener un FLUJO que controlar.</li>
+    </ul>
+  </section>
+  <section>
+    <h3>"PROGRAMAR ES FLUJO Y NO PROCESOS."</h3>
+  </section>
+  <section>
+    <h3>"PROGRAMAR ES COMO COCINAR... UNA RECETA."</h3>
+    <div>
+      <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/programmer-chef.jpg">
+    </div>
+    <ol>
+      <li>
+        <b>Algoritmo:</b> Serie de pasos ordenados y finitos para realizar una tarea o resolver un problema.</li>
+      <li>
+        <b>Diagrama de Flujo:</b> Es es la representación gráfica de un algoritmo.</li>
+      <li>
+        <b>Código de Programación:</b> Conjunto de lineas de texto (instrucciones) escritas en algún lenguaje de
+        programación,
+        interpretadas y/o compiladas por una computadora, para realizar una tarea o resolver un problema.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>¿Cómo determino si un número dado, es par o impar?</h2>
+  </section>
+  <section>
+    <h3>Algoritmo</h3>
+    <ol>
+      <li>Ingresar un número.</li>
+      <li>Dividir el número en cuestión entre 2.</li>
+      <li>
+        Si el residuo de la división es:
+        <ul>
+          <li>0, el número es par.</li>
+          <li>1, el número es impar.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h3>Diagrama de Flujo</h3>
+    <div>
+      <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/diagrama-par-impar.jpg">
+    </div>
+  </section>
+  <section>
+    <h3>Código de Programación Frontend (JavaScript)</h3>
+    <div>
+      <pre><code>
+function parImpar() {
+  let numero = prompt('Ingresa un número'),
+    modulo = numero % 2,
+    par = `El número: ${numero} es Par`,
+    impar = `El número: ${numero} es Impar`
+
+  return (modulo === 0) ? par : impar
+}
+
+parImpar()
+      </code></pre>
+    </div>
+  </section>
+  <section>
+    <h2>JavaScript</h2>
+  </section>
+  <section>
+    <h3>ISOMORFISMO</h3>
+    <p>Hoy JavaScript, es el único lenguaje capaz de ejecutarse en las 3 capas de una aplicación:</p>
+    <ol>
+      <li>Frontend (JavaScript).</li>
+      <li>Backend (Node.js).</li>
+      <li>Persistencia de Datos (Varias opciones).</li>
+    </ol>
+  </section>
+  <section>
+    <p>Con JavaScript puedes:</p>
+    <ul>
+      <li>Diseño y Desarrollo Web.</li>
+      <li>Hacer videojuegos.</li>
+      <li>Experiencias 3D, Realidad Aumentada, Realidad Virtual.</li>
+      <li>Controlar Hardware (Drones, robots, electrodomésticos).</li>
+      <li>Aplicaciones Híbridas y Móviles.</li>
+      <li>etc.</li>
+    </ul>
+  </section>
+  <section>
+    <div>
+      <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/spectrum-frontend.png">
+    </div>
+  </section>
+  <section>
+    <h3>Código de Programación Backend (Node.js)</h3>
+    <div>
+      <pre><code>
+function parImpar() {
+  process.stdout.write('Ingresa un número: ')
+
+  process.stdin.once('data', numero => {
+    let modulo = numero % 2,
+      par = `El número: ${numero} es Par`,
+      impar = `El número: ${numero} es Impar`,
+      residuo = (modulo === 1) ? impar : par
+
+    process.stdout.write(residuo)
+    process.exit()
+  })
+}
+
+parImpar()
+</code></pre>
+    </div>
+  </section>
+  <section>
+    <h2>JavaScript NO es Java</h2>
+  </section>
+  <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/this-is-javascript.jpg">
+  <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/jsvsjava.jpg">
+  <img src="https://jonmircha.github.io/edjs-paradigmas2017/img/java-vs-javascript.jpg">
+</body>
+
+</html>
