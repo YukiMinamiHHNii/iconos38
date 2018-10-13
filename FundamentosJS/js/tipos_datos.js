@@ -135,7 +135,7 @@ class Persona {
     this.nombre = nombre
     this.edad = edad
     this.soltero = soltero,
-      this.contacto = contacto
+    this.contacto = contacto
     this.pasatiempos = pasatiempos
   }
 

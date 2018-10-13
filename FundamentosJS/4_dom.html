@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM: Document Object Model</title>
+  <link rel="stylesheet" href="./css/dom.css">
+</head>
+
+<body>
+  <h1>DOM: Document Object Model</h1>
+  <article id="theory" class="container  post">
+    <div id="what-is-dom">
+      <p>
+        El Modelo de Objetos del Documento (<b><i>DOM - Document Object Model</i></b>) es un API para documentos HTML y
+        XML.
+      </p>
+      <p>
+        Éste proveé una representación estructural del documento, permitiendo modificar su contenido y presentación
+        visual mediante código JS.
+      </p>
+      <p>
+        <mark>El DOM no es parte de la especificación de JavaScript, es una API para los navegadores.</mark>
+      </p>
+    </div>
+    <a href="#" id="link-doc" style="color: #F0DB4F; background-color: #2B2B2B; padding: 1rem;">Más información en MDN</a>
+    <h2>Elementos del Documento</h2>
+    <pre><code>  document
+  document.doctype
+  document.documentElement
+  document.head
+  document.charset
+  document.title
+  document.body
+  document.links
+  document.images
+  document.forms
+  document.getSelection().toString()
+  document.scripts
+  document.styleSheets
+</code></pre>
+    <h2>Seleccionar Nodos</h2>
+    <h3>Con Id</h3>
+    <pre><code>  document.getElementById()  </code></pre>
+    <h3>Con selectores CSS</h3>
+    <pre><code>  document.querySelector()
+  element.querySelector()
+  document.querySelectorAll()
+  element.querySelectorAll()
+</code></pre>
+    <h2>Manejo de Atributos</h2>
+    <pre><code>  .getAttribute()
+  .nombreAtributo
+  .setAttribute()
+  .nombreAtributo = 'valor'
+  .className
+  .classList
+    .add()
+    .remove()
+    .toggle()
+    .contains()
+  .id
+  .value
+</code></pre>
+    <h2>Manejo de Contenido</h2>
+    <p>Propiedades de lectura / escritura.</p>
+    <pre><code>  .textContent
+  .innerHTML
+  .outerHTML
+</code></pre>
+    <h2>Recorrer Elementos</h2>
+    <pre><code>  .children //Todos los hijos
+  .parentElement //Padre del elemento
+  .firstElementChild //Primer hijo
+  .lastElementChild //Último hijo
+  .previousElementSibling //Elemento hermano previo
+  .nextElementSibling //Elemento hermano siguiente</code></pre>
+    <h2>Crear Elementos</h2>
+    <pre><code>  document.createElement()
+  .appendChild()</code></pre>
+    <h2>Transformar Elementos</h2>
+    <pre><code>  .appendChild()
+  .insertBefore(newNode,nextNode)
+  .replaceChild(newChild,oldChild)
+  .cloneNode()
+  .removeChild()
+
+  .insertAdjacent...
+    <a href="https://developer.mozilla.org/es/docs/Web/API/Element/insertAdjacentElement" target="_blank">.insertAdjacentElement(position,el)</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/API/Element/insertAdjacentHTML" target="_blank">.insertAdjacentHTML(position,html)</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/API/Element/insertAdjacentText" target="_blank">.insertAdjacentText(position,text)</a>
+
+    Posiciones:
+      beforebegin (hermano anterior)
+      afterbegin (primer hijo)
+      beforeend (ultimo hijo)
+      afterend (hermano siguiente)</code></pre>
+    <h2>CSSOM</h2>
+    <h3></h3>
+    <pre><code> <a href="https://developer.mozilla.org/es/docs/Web/API/CSS_Object_Model" target="_blank">CSS Object Model</a>
+  .style
+  .getComputedStyle()
+  <a href="https://ed.team/blog/obtener-la-posicion-de-un-elemento-html-con-javascript" target="_blank">.getBoundingClientRect()</a>
+  .matchMedia()</code></pre>
+  </article>
+  <article id="cards" class="container  post  cards">
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/any" alt="Any">
+      <figcaption>Any</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/tech" alt="Tech">
+      <figcaption>Tech</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/animals" alt="Animals">
+      <figcaption>Animals</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/people" alt="People">
+      <figcaption>People</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/arch" alt="Architecture">
+      <figcaption>Architecture</figcaption>
+    </figure>
+  </article>
+  <script src="./js/dom.js"></script>
+</body>
+
+</html>
