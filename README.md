@@ -10,10 +10,10 @@
 
 * Isabel
   * isa.baezg@gmail.com
-  * [Drive]()
+  * [Drive](https://drive.google.com/drive/folders/1KP-kzdOSFE2pvb80zUi63hElL2ZWkcxk)
 * Oscar
   * oscaryordi@hotmail.com
-  * [Drive]()
+  * [Drive](https://drive.google.com/drive/folders/1iCsxCVSMHKnt45I12Vs11w4GLVc2iICR)
 * Ricardo
   * ricardo.bugarin@gmail.com
   * [Drive]()
