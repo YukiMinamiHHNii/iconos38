@@ -66,5 +66,6 @@ Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que int
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **PRIMER PARCIAL** | | 🤓 | |
+| 1. Generar un Curriculum o Landing Page con HTML y CSS Dinámico genrado con JS (clase 4). | ? | ? | ? |
 | 1. Generar un objeto literal y luego convertirlo a una clase (clase 3). | ? | ? | ? |
 | 1. Lógica de Negocios del Proyecto a desarrollar (clase 2). | ? | ? | ? |
