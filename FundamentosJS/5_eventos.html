@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <link rel="stylesheet" href="./css/eventos.css">
+</head>
+
+<body>
+  <h1>Eventos</h1>
+  <article id="theory">
+    <div id="what-is-events">
+      <p>
+        Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario y definir el
+        comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
+      </p>
+      <p>
+        Las funciones que se ejecutan en un evento se llaman <b><i>Event Handler</i></b> (Manejador de Eventos).
+      </p>
+      <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Events" class="link-doc" target="_blank">Más
+          información en MDN</a>
+      </p>
+    </div>
+  </article>
+  <h2>Eventos del Mouse</h2>
+  <nav class="buttons">
+    <button>Evento desde HTML</button>
+    <button id="btn-hello">Manejador de eventos</button>
+    <button id="btn-hi">Manejador de eventos 2</button>
+    <button id="btn-remove">Removiendo eventos</button>
+    <button id="btn-light-theme">Tema Claro</button>
+    <button id="btn-dark-theme">Tema Obscuro</button>
+    <button id="btn-js-theme">Tema JS</button>
+    <button id="btn-cards">Cambiar a figuras</button>
+  </nav>
+  <article id="cards" class="cards">
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/any" alt="Nature">
+      <figcaption>Nature</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/tech" alt="Tech">
+      <figcaption>Tech</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/animals" alt="Animals">
+      <figcaption>Animals</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/people" alt="People">
+      <figcaption>People</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/arch" alt="Architecture">
+      <figcaption>Architecture</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://placeimg.com/400/400/any" alt="Any">
+      <figcaption>Any</figcaption>
+    </figure>
+  </article>
+  <h2>Eventos del Teclado</h2>
+  <section class="stage">
+    <div class="ball"></div>
+  </section>
+  <h2>Eventos de Formulario</h2>
+  <form>
+    <input type="text" name="user" placeholder="usuario" required>
+    <input type="password" name="pass" placeholder="contraseña" required>
+    <input type="submit">
+  </form>
+  <h2>Eventos del Navegador</h2>
+  <section>
+    <p>
+      El evento <b><i>DOMContentLoaded</i></b> es disparado cuando el documento HTML ha sido completamente cargado y
+      parseado, sin esperar hojas de estilo, imágenes y subtramas para finalizar la carga.
+    </p>
+    <p>
+      El evento <b><i>load</i></b> se dispara cuando se ha detectado la carga completa de la página.
+    </p>
+    <p>
+      Es un error frecuente usar <b><i>load</i></b> cuando <b><i>DOMContentLoaded</i></b> es mucho más apropiado.
+    </p>
+    <p>
+      Peticiones asíncronas pausan el parseo del DOM.
+    </p>
+  </section>
+  <h3>Media Queries con JS</h3>
+  <div id="youtube"></div>
+  <div id="gmaps"></div>
+  <button class="scroll-top-btn  u-hidden">&#11014;</button>
+  <h2>Propagación de eventos</h2>
+  <div id="box-1" class="box">
+    <div id="box-2" class="box">
+      <div id="box-3" class="box">Click</div>
+    </div>
+  </div>
+  <h2>Delegación de Eventos</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+  <script src="./js/eventos.js"></script>
+</body>
+
+</html>
