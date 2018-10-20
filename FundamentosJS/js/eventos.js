@@ -119,4 +119,138 @@ Arrow Functions
     if (existMenu) d.body.removeChild(existMenu)
   })
 
+  const ball = d.querySelector('.ball')
+
+  let x = 0,
+    y = 0
+
+  const moveBAll = e => {
+    switch (e.key) {
+      case 'ArrowUp':
+        e.preventDefault()
+        y--
+        break
+      case 'ArrowDown':
+        e.preventDefault()
+        y++
+        break
+      case 'ArrowLeft':
+        e.preventDefault()
+        x--
+        break
+      case 'ArrowRight':
+        e.preventDefault()
+        x++
+        break
+    }
+
+    ball.style.transform = `translate(${x * 10}px, ${y * 10}px)`
+  }
+
+  d.addEventListener('keydown', e => {
+    //c(e.key)
+    //c(e.keyCode)
+    //c(e.ctrlKey)
+    //c(e.altKey)
+
+    if (e.key === 'a' && e.altKey) {
+      alert('Has lanzado una alerta')
+    } else if (e.key === 'c' && e.altKey) {
+      confirm('Has lanzado una confirmación')
+    } else if (e.key === 'p' && e.ctrlKey) {
+      prompt('Has lanzado un aviso')
+    }
+
+    moveBAll(e)
+  })
+
+
+  const form = d.forms[0]
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    alert('Enviando Form')
+
+    if (e.target.user.value === 'admin' && e.target.pass.value === 'qwerty') {
+      alert('Datos Correctos')
+    } else {
+      alert('Datos Incorrectos')
+    }
+  })
+
+  d.addEventListener('DOMContentLoaded', e => {
+    c('El DOM ha cargado')
+  })
+
+  w.addEventListener('load', e => {
+    c('La ventana del navegador ha cargado')
+    responsive()
+  })
+
+  const mq1024 = w.matchMedia('(min-width: 1024px)'),
+    youtube = d.getElementById('youtube'),
+    gmaps = d.getElementById('gmaps')
+
+  function responsive() {
+    if (mq1024.matches) {
+      youtube.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/EMrwaWroMhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+      gmaps.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6737010052343!2d-99.15426978543572!3d19.426499445910345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff2c1d750941%3A0xe370e185e573f2fe!2sIconos%2C+Instituto+de+Investigaci%C3%B3n+en+Comunicaci%C3%B3n+Y+Cultura!5e0!3m2!1ses-419!2smx!4v1540068071595" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+    } else {
+      youtube.innerHTML = '<a href="https://www.youtube.com/watch?v=EMrwaWroMhg" target="_blank">Ver Video</a>'
+      gmaps.innerHTML = '<a href="https://goo.gl/maps/DtqGmt4ybnu" target="_blank">Ver Mapa</a>'
+    }
+  }
+
+  w.addEventListener('resize', e => {
+    //c('El navegador se ha redimensionado')
+    responsive()
+  })
+
+  const scrollBtn = d.querySelector('.scroll-top-btn')
+
+  w.addEventListener('scroll', e => {
+    //c('El navegador ha scrolleado')
+    //c(w.pageXOffset, pageYOffset)
+
+    if (w.pageYOffset > 200) {
+      scrollBtn.classList.remove('u-hidden')
+    } else {
+      scrollBtn.classList.add('u-hidden')
+    }
+  })
+
+  scrollBtn.addEventListener('click', e => {
+    w.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+
+
+  const boxes = d.querySelectorAll('.box')
+
+  boxes.forEach(el => {
+    el.addEventListener('click', e => {
+      c('click')
+      c(`click en el div ${e.target.id}`)
+      e.stopPropagation()
+    })
+  })
+
+  d.addEventListener('click', e => {
+    if (e.target.matches('li')) {
+      c(`click ${e.target.textContent}`)
+    }
+
+    if (e.target.matches('.card img')) {
+      c(`click ${e.target.src}`)
+    }
+  })
+
 })(document, window, console.log);
+
+/*
+  Tarea:
+    Agregar Eventos al Curriculum creado con JS
+    Crear un Menú de Hamburguesa
+*/
