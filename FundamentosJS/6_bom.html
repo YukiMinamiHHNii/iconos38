@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BOM: Browser Object Model</title>
+  <link rel="stylesheet" href="./css/bom.css">
+</head>
+
+<body>
+  <h1>BOM: Browser Object Model</h1>
+  <article id="theory">
+    <div id="what-is-bom">
+      <p>
+        El Modelo de Objetos del Navegador (<b><i>BOM - Browser Object Model</i></b>) es un API que permite acceder y
+        modificar las propiedades de las ventanas del propio navegador.
+      </p>
+      <p>
+        Mediante BOM, es posible redimensionar y mover la ventana del navegador y realizar muchas otras manipulaciones
+        no relacionadas con el contenido de la página HTML.
+      </p>
+      <p>
+        El mayor inconveniente del BOM es que, a diferencia del DOM, no es un API estándar, cada navegador lo puede
+        interpretar de diferente manera.
+      </p>
+    </div>
+  </article>
+  <h2>Atributos de la ventana</h2>
+  <pre><code>  //Ancho y Alto del Viewport
+  window.innerWidth
+  window.innerHeight
+  //Ancho y Alto del Navegador
+  window.outerWidth
+  window.outerHeight
+  //Distancia recorrida en el scroll
+  window.scrollX
+  window.scrollY
+  //Posición del navegador respecto de la pantalla
+  window.screenX
+  window.screenY
+</code></pre>
+  <h2>Métodos de la ventana</h2>
+  <pre><code>  window.alert('string')
+  window.confirm('string')
+  window.prompt('string')
+  window.open('url')
+  window.close()
+  window.print()
+</code></pre>
+  <h2>Responsive Tester</h2>
+  <form id="responsive-tester">
+    <input name="iurl" type="url" placeholder="URL" required>
+    <input name="iwidth" type="text" placeholder="Ancho" required>
+    <input name="iheight" type="text" placeholder="Alto" required>
+    <input name="itest" type="button" value="Probar">
+    <input name="iclose" type="button" value="Cerrar">
+  </form>
+  <h2>Atributos de la URL</h2>
+  <pre><code>  location
+  location.origin
+  location.protocol
+  location.host
+  location.hostname
+  location.port
+  location.href
+  location.hash
+  location.pathname
+</code></pre>
+  <h2>Métodos de la URL</h2>
+  <pre><code>  location.reload()
+  location.assign(url)
+  location.replace(url) //no guardar en el historial
+</code></pre>
+  <h2>URL Tester</h2>
+  <form id="url-tester">
+    <input name="iurl" type="url" placeholder="URL" required>
+    <input name="ireload" type="button" value="Recargar">
+    <input name="iredirect" type="button" value="Redirigir">
+  </form>
+  <h2>Historial</h2>
+  <pre><code>  history
+  history.length
+  history.back(2)
+  history.forward(1)
+  history.go(-3)
+</code></pre>
+  <h2>El navegador y sus características</h2>
+  <pre><code>  navigator
+  navigator.connection
+  navigator.geolocation
+  navigator.mediaDevices
+  navigator.mimeTypes
+  navigator.onLine
+  navigator.serviceWorker
+  navigator.storage
+  navigator.usb
+  navigator.userAgent
+  ...
+</code></pre>
+  <h2>Detección del navegador del usuario</h2>
+  <ul>
+    <li>User Agent: <b id="user-agent"></b></li>
+    <li>Plataforma: <b id="platform"></b></li>
+    <li>Navegador: <b id="browser"></b></li>
+  </ul>
+  <h2 id="network-status">Detección de la conexión</h2>
+  <h2>Detección de la cámara web</h2>
+  <video id="webcam"></video>
+  <h2>Detección de la geolocalización del usuario</h2>
+  <p>Tu posición actual es:</p>
+  <ul>
+    <li>Latitud: <b id="latitude"></b></li>
+    <li>Longitud: <b id="longitude"></b></li>
+    <li>Precisión: <b id="accuracy"></b> metros</li>
+  </ul>
+  <button id="map">Ver Mapa</button>
+  <script src="./js/bom.js"></script>
+</body>
+
+</html>
