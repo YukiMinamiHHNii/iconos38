@@ -1,0 +1,80 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --main-color: #F0DB4F;
+  --second-color: #2B2B2B;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+*,
+*:after,
+*:before { box-sizing: inherit; }
+
+a {
+  color: var(--main-color);
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color: #FFF;
+  opacity: .75;
+}
+
+pre {
+  padding: 1rem;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  overflow-x: auto;
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.shake {
+  animation-name: shake;
+}
+
+.link-doc {
+  margin: auto;
+  padding: 1rem;
+  display: block;
+  width: 50%;
+  text-align: center;
+  background-color: #2B2B2B;
+}
+
+.countdown {
+  font-size: 2rem;
+  text-align: center;
+}

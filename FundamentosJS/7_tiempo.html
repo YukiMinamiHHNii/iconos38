@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tiempo en JavaScript</title>
+  <link rel="stylesheet" href="./css/tiempo.css">
+</head>
+
+<body>
+  <h1>Tiempo en JavaScript</h1>
+  <h2>Objeto Date</h2>
+  <pre><code>  new Date()
+  new Date(year,month,day) //meses de 0 a 11
+  new Date(year,month,day,hours,minutes,seconds)
+  new Date(string)
+  new Date().getFullYear()
+  new Date().getMinutes()
+  new Date().getSeconds()
+  new Date().getDate()
+  new Date().getDay()
+  new Date().getMonth()
+  new Date().getTime() //ms desde 01-01-1970
+  new Date().getTimezoneOffset() //mins entre la hora local y UTC
+  //Hora y Fecha en formato humano
+  new Date().toLocaleString()
+  new Date().toLocaleDateString()
+  new Date().toLocaleTimeString()
+</code></pre>
+  <p>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date" class="link-doc"
+      target="_blank">Más
+      información en MDN</a>
+  </p>
+  <h2>Timers</h2>
+  <h3 id="clock" class="animated"></h3>
+  <button id="start-clock">Iniciar Reloj</button>
+  <button id="stop-clock">Detener Reloj</button>
+  <button id="start-shake">Shake</button>
+  <button id="stop-shake">NO Shake</button>
+  <h2>Countdown</h2>
+  <div id="countdown" class="countdown"></div>
+  <script src="./js/tiempo.js"></script>
+</body>
+
+</html>

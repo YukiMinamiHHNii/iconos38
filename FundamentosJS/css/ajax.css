@@ -1,0 +1,48 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --main-color: #F0DB4F;
+  --second-color: #2B2B2B;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+*,
+*:after,
+*:before { box-sizing: inherit; }
+
+a {
+  color: var(--main-color);
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color: #FFF;
+  opacity: .75;
+}
+
+pre {
+  padding: 1rem;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  overflow-x: auto;
+}
+
+.ajax {
+  /* https://ed.team/blog/responsive-design-con-grid-css-y-sin-media-queries */
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+  grid-gap: 10px;
+}
+
+.ajax img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
