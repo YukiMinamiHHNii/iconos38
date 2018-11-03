@@ -83,13 +83,20 @@
         limitTime = countdownDate - now,
         days = Math.floor(limitTime / (1000 * 60 * 60 * 24)),
         hours = ('0' + Math.floor((limitTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2),
-        minutes,
-        seconds
+        minutes = ('0' + Math.floor((limitTime % (1000 * 60 * 60)) / (1000 * 60))).slice(-2),
+        seconds = ('0' + Math.floor((limitTime % (1000 * 60)) / 1000)).slice(-2)
 
       c(countdownDate, now, limitTime)
-      c(`${days} días ${hours} horas`)
+      c(`${days} días ${hours} horas ${minutes} minutos ${seconds} segundos`)
+
+      countdownEl.innerHTML = `${days} días ${hours} horas ${minutes} minutos ${seconds} segundos`
+
+      if (limitTime < 0) {
+        clearInterval(countdownInterval)
+        countdownEl.innerHTML = finalMessage
+      }
     }, 1000)
   }
 
-  countdown('countdown', 'May 23, 2019 15:11:11', 'Terminó el plazo')
+  countdown('countdown', 'Nov 03, 2018 14:01:00', 'Terminó el plazo')
 })(document, window, navigator, console.log);
