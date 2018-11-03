@@ -1,0 +1,43 @@
+{
+  "nombre": "Jonathan",
+  "edad": "34",
+  "casado": "true",
+  "movies": [
+    {
+      "title": "Batman: El Regreso del Caballero Oscuro. Primera Parte",
+      "year": "2012",
+      "genres": " Animation , Action , Adventure",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "year": "2018",
+      "genres": "Biography , Drama , Music",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "title": "Ready Player One",
+      "year": "2018",
+      "genres": "Action , Adventure , Sci-Fi",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "title": "Avengers: Infinity War",
+      "year": "2018",
+      "genres": "Action , Adventure , Fantasy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "title": "Rocky Balboa",
+      "year": "2006",
+      "genres": "Drama, Sport",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWIyNmQyNjctYmVmMS00MGI4LWIxMmUtNjA0ODYzOTA0Yjk0L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR6,0,182,268_AL_.jpg"
+    },
+    {
+      "title": "Hacia rutas salvajes",
+      "year": "2007",
+      "genres": "Adventure , Biography , Drama",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    }
+  ]
+}
