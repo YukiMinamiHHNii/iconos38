@@ -12,7 +12,7 @@ function db_connect () {
   $dsn = 'mysql:host=localhost;dbname=portafolio_web';
   $user = 'root';
   $pass = 'qwerty';
-  $options = null;
+  $options = array( PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8' );
 
   try {
     $db = new PDO($dsn, $user, $pass, $options);
@@ -24,7 +24,21 @@ function db_connect () {
   }
 }
 
-function db_create () {}
+function db_create () {
+  $db = db_connect();
+  $sql = 'INSERT INTO categorias (cat_nombre) VALUES ( ? )';
+  $data = array( $_POST['cat_nombre'] );
+
+  $mysql = $db->prepare($sql);
+  $result = $mysql->execute($data);
+  $db = null;
+
+  $res = ($result)
+    ? array ( 'err' => false, 'msg' => 'Operación Exitosa' )
+    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
+
+  return json_encode($res);
+}
 
 function db_read () {
   $db = db_connect();
@@ -38,11 +52,29 @@ function db_read () {
   return$result;
 }
 
-function db_read_one () {}
+function db_read_one () {
+  $db = db_connect();
+  $sql = 'SELECT * FROM categorias WHERE cat_id = ?';
+  $data = array( $_GET['cat_id'] );
+
+  $mysql = $db->prepare($sql);
+  $result = $mysql->execute($data);
+  $result = $mysql->fetch(PDO::FETCH_ASSOC);
+  $db = null;
+
+  return$result;
+}
 
 function db_update () {}
 
 function db_delete () {}
+
+if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
+  db_create();
+  /* echo '<pre>';
+    var_dump(db_create());
+  echo '</pre>'; */
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -75,6 +107,7 @@ function db_delete () {}
       <h3>Create</h3>
       <form method="post">
         <input type="text" name="cat_nombre" placeholder="nombre de categoría" required>
+        <input type="hidden" name="action" value="create">
         <input type="submit">
       </form>
     </article>
@@ -84,6 +117,9 @@ function db_delete () {}
         <tr>
           <th>cat_id</th>
           <th>cat_name</th>
+          <th colspan="2">
+            <a href="<?=$_SERVER['PHP_SELF']?>">Limpiar CRUD</a>
+          </th>
         </tr>
         <?php
           $to_read = db_read();
@@ -92,6 +128,12 @@ function db_delete () {}
           <tr>
             <td><?=$row['cat_id']?></td>
             <td><?=$row['cat_nombre']?></td>
+            <td>
+              <a href="?action=edit&cat_id=<?=$row['cat_id']?>">Editar</a>
+            </td>
+            <td>
+              <a href="?action=delete&cat_id=<?=$row['cat_id']?>">Eliminar</a>
+            </td>
           </tr>
         <?php } ?>
       </table>
@@ -103,6 +145,20 @@ function db_delete () {}
     </article>
     <article class="Update">
       <h3>Update</h3>
+      <?php
+        if ( isset($_GET['action']) and $_GET['action'] === 'edit' ) {
+          $to_edit = db_read_one();
+          echo '<pre>';
+            var_dump(db_read_one());
+          echo '</pre>';
+      ?>
+        <form method="post">
+          <input type="text" name="cat_nombre" placeholder="nombre de categoría" value="<?=$to_edit['cat_nombre']?>" required>
+          <input type="hidden" name="cat_id" value="<?=$to_edit['cat_id']?>">
+          <input type="hidden" name="action" value="update">
+          <input type="submit">
+        </form>
+      <?php } ?>
     </article>
     <article class="Delete">
       <h3>Delete</h3>
