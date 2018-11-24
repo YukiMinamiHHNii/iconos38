@@ -30,14 +30,14 @@ function db_create () {
   $data = array( $_POST['cat_nombre'] );
 
   $mysql = $db->prepare($sql);
-  $result = $mysql->execute($data);
+  $query = $mysql->execute($data);
   $db = null;
 
-  $res = ($result)
+  $result = ($query)
     ? array ( 'err' => false, 'msg' => 'Operación Exitosa' )
     : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
 
-  return json_encode($res);
+  return json_encode($result);
 }
 
 function db_read () {
@@ -45,11 +45,16 @@ function db_read () {
   $sql = 'SELECT * FROM categorias';
 
   $mysql = $db->prepare($sql);
-  $mysql->execute();
-  $result = $mysql->fetchAll(PDO::FETCH_ASSOC);
+  $query = $mysql->execute();
+
+  $result = ($query)
+    ? $mysql->fetchAll(PDO::FETCH_ASSOC)
+    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
+
   $db = null;
 
-  return$result;
+  //return json_encode($result);
+  return $result;
 }
 
 function db_read_one () {
@@ -58,11 +63,16 @@ function db_read_one () {
   $data = array( $_GET['cat_id'] );
 
   $mysql = $db->prepare($sql);
-  $result = $mysql->execute($data);
-  $result = $mysql->fetch(PDO::FETCH_ASSOC);
+  $query = $mysql->execute($data);
+
+  $result = ($query)
+    ? $mysql->fetch(PDO::FETCH_ASSOC)
+    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
+
   $db = null;
 
-  return$result;
+  //return json_encode($result);
+  return $result;
 }
 
 function db_update () {}
