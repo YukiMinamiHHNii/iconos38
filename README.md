@@ -38,6 +38,7 @@
 ### Sitios Web Dinámicos y Bases de Datos (12pm a 4pm)
 
 * Sábado 15/Dic/2018
+* Jueves 20/DIc/2018
 * Sábado 22/Dic/2018
 * Sábado 12/Ene/2019
 * Sábado 19/Ene/2019

@@ -24,11 +24,8 @@ function db_connect () {
   }
 }
 
-function db_create () {
+function db_query ($sql, $data) {
   $db = db_connect();
-  $sql = 'INSERT INTO categorias (cat_nombre) VALUES ( ? )';
-  $data = array( $_POST['cat_nombre'] );
-
   $mysql = $db->prepare($sql);
   $query = $mysql->execute($data);
   $db = null;
@@ -40,33 +37,15 @@ function db_create () {
   return json_encode($result);
 }
 
-function db_read () {
+function db_search ($sql, $all = true, $data = array()) {
   $db = db_connect();
-  $sql = 'SELECT * FROM categorias';
-
-  $mysql = $db->prepare($sql);
-  $query = $mysql->execute();
-
-  $result = ($query)
-    ? $mysql->fetchAll(PDO::FETCH_ASSOC)
-    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
-
-  $db = null;
-
-  //return json_encode($result);
-  return $result;
-}
-
-function db_read_one () {
-  $db = db_connect();
-  $sql = 'SELECT * FROM categorias WHERE cat_id = ?';
-  $data = array( $_GET['cat_id'] );
-
   $mysql = $db->prepare($sql);
   $query = $mysql->execute($data);
 
   $result = ($query)
-    ? $mysql->fetch(PDO::FETCH_ASSOC)
+    ? ($all)
+      ? $mysql->fetchAll(PDO::FETCH_ASSOC)
+      : $mysql->fetch(PDO::FETCH_ASSOC)
     : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
 
   $db = null;
@@ -75,53 +54,27 @@ function db_read_one () {
   return $result;
 }
 
-function db_update () {
-  $db = db_connect();
+if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
+  $sql = 'INSERT INTO categorias (cat_nombre) VALUES ( ? )';
+  $data = array( $_POST['cat_nombre'] );
+  db_query($sql, $data);
+  /* echo '<pre>';
+    var_dump(db_create());
+  echo '</pre>'; */
+} else if ( isset($_POST['action']) and $_POST['action'] === 'update' ) {
   $sql = 'UPDATE categorias SET cat_nombre = ? WHERE cat_id = ?';
   $data = array(
     $_POST['cat_nombre'],
     $_POST['cat_id']
   );
-
-  $mysql = $db->prepare($sql);
-  $query = $mysql->execute($data);
-  $db = null;
-
-  $result = ($query)
-    ? array ( 'err' => false, 'msg' => 'Operación Exitosa' )
-    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
-
-  return json_encode($result);
-}
-
-function db_delete () {
-  $db = db_connect();
-  $sql = 'DELETE FROM categorias WHERE cat_id = ?';
-  $data = array($_POST['cat_id']);
-
-  $mysql = $db->prepare($sql);
-  $query = $mysql->execute($data);
-  $db = null;
-
-  $result = ($query)
-    ? array ( 'err' => false, 'msg' => 'Operación Exitosa' )
-    : array ( 'err' => true, 'msg' => 'Error al ejecutar la operación' );
-
-  return json_encode($result);
-}
-
-if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
-  db_create();
-  /* echo '<pre>';
-    var_dump(db_create());
-  echo '</pre>'; */
-} else if ( isset($_POST['action']) and $_POST['action'] === 'update' ) {
-  db_update();
+  db_query($sql, $data);
   /* echo '<pre>';
     var_dump(db_update());
   echo '</pre>'; */
 } else if ( isset($_POST['action']) and $_POST['action'] === 'delete' ) {
-  db_delete();
+  $sql = 'DELETE FROM categorias WHERE cat_id = ?';
+  $data = array($_POST['cat_id']);
+  db_query($sql, $data);
   /* echo '<pre>';
     var_dump(db_delete());
   echo '</pre>'; */
@@ -173,7 +126,8 @@ if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
           </th>
         </tr>
         <?php
-          $to_read = db_read();
+          $sql = 'SELECT * FROM categorias';
+          $to_read = db_search($sql);
           foreach ($to_read as $row) {
         ?>
           <tr>
@@ -190,7 +144,7 @@ if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
       </table>
       <?php
         echo '<pre>';
-          var_dump(db_read());
+          var_dump(db_search($sql));
         echo '</pre>';
       ?>
     </article>
@@ -198,9 +152,11 @@ if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
       <h3>Update</h3>
       <?php
         if ( isset($_GET['action']) and $_GET['action'] === 'edit' ) {
-          $to_edit = db_read_one();
+          $sql = 'SELECT * FROM categorias WHERE cat_id = ?';
+          $data = array( $_GET['cat_id'] );
+          $to_edit = db_search($sql, false, $data);
           echo '<pre>';
-            var_dump(db_read_one());
+            var_dump(db_search($sql, false, $data));
           echo '</pre>';
       ?>
         <form method="post">
@@ -215,9 +171,11 @@ if ( isset($_POST['action']) and $_POST['action'] === 'create' ) {
       <h3>Delete</h3>
       <?php
         if ( isset($_GET['action']) and $_GET['action'] === 'delete' ) {
-          $to_delete = db_read_one();
+          $sql = 'SELECT * FROM categorias WHERE cat_id = ?';
+          $data = array( $_GET['cat_id'] );
+          $to_delete = db_search($sql, false, $data);
           echo '<pre>';
-            var_dump(db_read_one());
+            var_dump(db_search($sql, false, $data));
           echo '</pre>';
       ?>
         <form method="post">
