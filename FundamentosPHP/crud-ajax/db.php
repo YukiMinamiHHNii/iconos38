@@ -1,6 +1,6 @@
 <?php
 function db_connect () {
-  $dsn = 'mysql:host=localhost;dbname=portfolio_web';
+  $dsn = 'mysql:host=localhost;dbname=portafolio_web';
   $user = 'root';
   $pass = 'qwerty';
   $options = array( PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8' );

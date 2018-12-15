@@ -29,7 +29,7 @@
     <table class="CRUD-table  u-hidden">
       <tr>
         <th>cat_id</th>
-        <th>cat_name</th>
+        <th>cat_nombre</th>
         <th colspan="2">
           <a href="#add" class="u-btn  u-add">agregar</a>
         </th>
@@ -40,7 +40,7 @@
     <div class="ModalWindow-box">
       <h2>Agregar</h2>
       <form class="Form-add">
-        <input type="text" name="cat_name" placeholder="Categoría" required>
+        <input type="text" name="cat_nombre" placeholder="Categoría" required>
         <input class="u-btn" type="submit">
       </form>
       <a class="u-btn u-right" href="#">cerrar</a>
@@ -50,7 +50,7 @@
     <div class="ModalWindow-box">
       <h2>Editar</h2>
       <form class="Form-edit">
-        <input type="text" name="cat_name" placeholder="Categoría" required>
+        <input type="text" name="cat_nombre" placeholder="Categoría" required>
         <input type="hidden" name="cat_id">
         <input class="u-btn" type="submit">
       </form>
@@ -72,7 +72,7 @@
   <template id="table-row">
     <tr>
       <td class="cat_id"></td>
-      <td class="cat_name"></td>
+      <td class="cat_nombre"></td>
       <td>
         <a href="#edit" class="u-btn  u-edit">editar</a>
       </td>
