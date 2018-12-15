@@ -35,6 +35,16 @@ switch ($action) {
     $res = db_affect($sql, $data);
     break;
 
+  case 'orderByName':
+    $sql = 'SELECT * FROM categorias ORDER BY cat_nombre';
+    $data = db_search($sql);
+    $res = array(
+      'err' => false,
+      'data' => $data,
+      'numRows' => count($data)
+    );
+    break;
+
   default:
     $res = array(
       'err' => true,

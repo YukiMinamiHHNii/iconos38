@@ -102,6 +102,66 @@
   })
 
   d.addEventListener('click', e => {
+    if (e.target.matches('.u-edit')) {
+      let form = d.querySelector('.Form-edit')
+      //c(e.target.dataset)
+      form.querySelector('[name="cat_nombre"]').value = e.target.dataset.name
+      form.querySelector('[name="cat_id"]').value = e.target.dataset.id
+    } else if (e.target.matches('.u-delete')) {
+      let form = d.querySelector('.Form-delete')
+      //c(e.target.dataset)
+      form.querySelector('mark').textContent = e.target.dataset.id
+      form.querySelector('[name="cat_id"]').value = e.target.dataset.id
+    } else if (e.target.matches('[type="reset"]')) {
+      let form = d.querySelector('.Form-delete')
+      form.reset()
+      w.location.hash = '#'
+    } else if (e.target.matches('.u-order')) {
+      let action = 'orderByName'
+      fetch(`./crud.php?action=${action}`, { method: 'get' })
+        .then(res => {
+          preload.classList.remove('is-active')
+          message.classList.add('is-active')
+          c(res.ok)
+          return (res.ok)
+            ? res.json()
+            : Promise.reject({ status: res.status, statusText: res.statusText })
+        })
+        .then(res => {
+          c(res)
+          if (res.numRows === 0) {
+            message.innerHTML = 'No existen datos para la consulta ejecutada'
+          } else {
+            message.classList.remove('is-active')
+            table.classList.add('is-active')
 
+            res.data.forEach(row => {
+              //c(row)
+              tr.querySelector('.cat_id').textContent = row.cat_id
+              tr.querySelector('.cat_nombre').textContent = row.cat_nombre
+              tr.querySelector('.u-edit').dataset.id = row.cat_id
+              tr.querySelector('.u-edit').dataset.name = row.cat_nombre
+              tr.querySelector('.u-delete').dataset.id = row.cat_id
+
+              let clone = d.importNode(tr, true)
+              fragment.appendChild(clone)
+            })
+
+            table.appendChild(fragment)
+          }
+        })
+        .catch(err => {
+          c(err)
+          preload.classList.remove('is-active')
+          message.classList.add('is-active')
+          message.innerHTML = `
+            <p>
+              Parece que hay un problema.
+              <b>Error ${err.status}:</b>
+              <mark>${err.statusText}</mark>.
+            </p>
+          `
+        })
+    }
   })
 })(document, window, console.log);

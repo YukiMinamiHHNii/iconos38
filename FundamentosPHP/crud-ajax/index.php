@@ -29,7 +29,7 @@
     <table class="CRUD-table  u-hidden">
       <tr>
         <th>cat_id</th>
-        <th>cat_nombre</th>
+        <th><a href="#" class="u-order">cat_nombre</a></th>
         <th colspan="2">
           <a href="#add" class="u-btn  u-add">agregar</a>
         </th>
