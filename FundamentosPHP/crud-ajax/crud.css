@@ -1,0 +1,192 @@
+/* ********** Custom Properties ********** */
+:root {
+  --font-size: 16px;
+  --line-height: 1.6;
+  --font-main: sans-serif;
+  --main-color: #4F5B93;
+  --second-color: #8892BF;
+  --bg-color: #E5E5E5;
+  --bg-alternate-color: #D4D4D4;
+  --main-modal-color: rgba(79, 91, 147, .75);
+  --max-width: 800px;
+}
+
+/* ********** Reset Styles ********** */
+html {
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  display: inline-block;
+  padding: 0 1rem;
+  border-radius: .25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-decoration: none;
+  vertical-align: middle;
+  border: thin solid var(--main-color);
+  background-color: var(--bg-alternate-color);
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+/* ********** @keyframes ********** */
+@keyframes showModal {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ********** CRUD ********** */
+.CRUD {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.CRUD-header { text-align: center; }
+
+.CRUD-table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: var(--main-color);
+  overflow-x: auto;
+}
+
+.CRUD-table tr:nth-child(even) { background-color: var(--bg-color); }
+
+.CRUD-table tr:nth-child(odd):not(:first-child) { background-color: var(--bg-alternate-color); }
+
+.CRUD-table th {
+  padding: .5rem;
+  font-size: 1.15rem;
+  color: var(--bg-color);
+}
+
+.CRUD-table td { padding: .5rem; }
+
+/* ********** ModalWindow ********** */
+.ModalWindow {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-modal-color);
+}
+
+.ModalWindow:target {
+  display: flex;
+  animation: showModal .5s ease-in-out;
+}
+
+.ModalWindow-box {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  width: 50%;
+}
+
+.ModalWindow-box h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.ModalWindow-box p {
+  font-size: 1.15rem;
+}
+
+.ModalWindow-box mark {
+  padding: 0 1rem;
+  font-weight: bold;
+  background-color: var(--second-color);
+}
+
+/* ********** Utilities Classes ********** */
+.u-btn {
+  display: inline-block;
+  padding: 0 1rem;
+  border: none;
+  border-radius: .25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: var(--second-color);
+  color: var(--bg-color);
+  transition: all .3s ease;
+}
+
+.u-btn:hover { opacity: .85; }
+
+.u-right { float: right; }
+
+.u-message {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--second-color);
+  color: var(--bg-color);
+}
+
+.u-hidden {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.u-hidden.is-active {
+  height: auto;
+  opacity: 1;
+  transition: opacity 600ms ease-out,
+              height 300ms ease-in;
+}
+
+/* ********** CSS Spinner ********** */
+/* http://tobiasahlin.com/spinkit/ */
+
+.spinner {
+  margin: 0 auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 { animation-delay: -1.1s; }
+
+.spinner .rect3 { animation-delay: -1.0s; }
+
+.spinner .rect4 { animation-delay: -0.9s; }
+
+.spinner .rect5 { animation-delay: -0.8s; }
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { transform: scaleY(0.4); }
+  20% { transform: scaleY(1.0); }
+}
