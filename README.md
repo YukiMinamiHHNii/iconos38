@@ -10,64 +10,61 @@
 
 * Isabel
   * isa.baezg@gmail.com
-  * [Drive](https://drive.google.com/drive/folders/1KP-kzdOSFE2pvb80zUi63hElL2ZWkcxk)
+  * [GitHub]()
 * Oscar
   * oscaryordi@hotmail.com
-  * [Drive](https://drive.google.com/drive/folders/1iCsxCVSMHKnt45I12Vs11w4GLVc2iICR)
-* Ricardo
-  * ricardo.bugarin@gmail.com
-  * [Drive]()
+  * [GitHub]()
+* Christhoper
+  * cvz.tnk@gmail.com
+  * [GitHub]()
 
 ## Materias:
 
-### Seminario de Lenguajes de Programación (12pm a 4:30pm)
+### Gestión de Sitios Web (8am a 12pm)
 
-* Sábado 22/Sep/2018
-* Sábado 29/Sep/2018
-* Sábado 13/Oct/2018
-* Sábado 20/Oct/2018
+* Sábado 02/Feb/2019
+* Sábado 09/Feb/2019
+* Sábado 16/Feb/2019
+* Sábado 23/Feb/2019
 
-### Programación Web Avanzada (12pm a 4pm)
+### Laboratorio de Estructuras de Trabajo para la Web  (8am a 12pm)
 
-* Sábado 27/Oct/2018
-* Sábado 03/Nov/2018
-* Sábado 10/Nov/2018
-* Sábado 17/Nov/2018
-* Sábado 24/Nov/2018
+* Sábado 02/Mar/2019
+* Sábado 09/Mar/2019
+* Sábado 16/Mar/2019
+* Sábado 23/Mar/2019
+* Sábado 30/Mar/2019
 
-### Sitios Web Dinámicos y Bases de Datos (12pm a 4pm)
+### Laboratorio para Dispositivos Móviles (1pm a 4pm)
 
-* Sábado 15/Dic/2018
-* Jueves 20/DIc/2018
-* Sábado 22/Dic/2018
-* Sábado 12/Ene/2019
-* Sábado 19/Ene/2019
+* Sábado 06/Abr/2019
+* Sábado 13/Abr/2019
+* Sábado 27/Abr/2019
+* Sábado 04/May/2019
+* Sábado 11/May/2019
 
 ## Objetivo:
 
-Al finalizar el cuatrimestre el estudiante desarrollará una aplicación que interactue Frontend, Backend y Base de Datos.
+Al finalizar el cuatrimestre el estudiante desarrollará y desplegará una aplicación isomórfica (Frontend, Backend y Base de Datos con el mismo lenguaje) con JavaScript, además tendrá características que le permita instalarse en dispositivos móviles convirtiéndola en una aplicación web progresiva (PWA). Las tecnologías que usaremos serán: Node.js, Firebase, Git y GitHub principalmente.
 
 ## Evaluación:
 
 * 100% Actividades (Evaluación continua)
-  * Evaluación Parcial 1 (20/Oct/2018)
-  * Evaluación Parcial 2 (24/Nov/2018)
-  * Evaluación Parcial 3 (19/Ene/2019)
+  * Evaluación Parcial 1 (23/Feb/2019)
+  * Evaluación Parcial 2 (30/Mar/2019)
+  * Evaluación Parcial 3 (11/May/2019)
+
 * Entrega Final de Proyecto:
-  * Sábado 19 de Enero 2019 a las 02:59:59pm
-  * Entregar en horario de clase vía correo, dropbox, drive, wetransfer, etc. al correo jonmircha@gmai.com
+  * Sábado 11 de Mayo 2019 a las 02:59:59pm
+  * Entregar en horario de clase vía repositorio de GitHub
 
 ## Actividades
 
-| Actividad | Isabel | Oscar | Ricardo |
+| Actividad | Isabel | Oscar | Christopher |
 | -- | -- | -- | -- |
 | **TERCER PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **PRIMER PARCIAL** | | 🤓 | |
-| 5. Crear un Menú de Hamburguesa (clase 5). | ? | ? | ? |
-| 4. Agregar Eventos al Curriculum creado con JS (clase 5). | ? | ? | ? |
-| 3. Generar un Curriculum o Landing Page con HTML y CSS Dinámico genrado con JS (clase 4). | ? | ? | ? |
-| 2. Generar un objeto literal y luego convertirlo a una clase (clase 3). | ? | ? | ? |
-| 1. Lógica de Negocios del Proyecto a desarrollar (clase 2). | ? | ? | ? |
+| 1. ¿Qué proyecto voy a desarrollar? Define el MVP (Minimum Viable Product) que tu proyecto deberá cumplir a nivel de carácterísticas, funcionalidades y módulos. (clase 2). | ? | ? | ? |
