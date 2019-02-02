@@ -6,7 +6,7 @@
 * **[@jonmircha](https://twitter.com/jonmircha)**
 * **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
-## Estudiantes
+## [Estudiantes](https://docs.google.com/spreadsheets/d/1sw8EqLb1JS_K9a_nfIkZVxrwaCai_BZbpibY0Gr0yX4/)
 
 * Isabel
   * isa.baezg@gmail.com
@@ -67,4 +67,5 @@ Al finalizar el cuatrimestre el estudiante desarrollará y desplegará una aplic
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **PRIMER PARCIAL** | ? | ? | ? |
+| 2. Crear un repositorio en GitHub para tu proyecto y agregar un README.md explicando la propuesta de tu MVP, si no sabes usar MarkDown aprende en este [enlace](https://joedicastro.com/pages/markdown.html) (clase 2). | ? | ? | ? |
 | 1. ¿Qué proyecto voy a desarrollar? Define el MVP (Minimum Viable Product) que tu proyecto deberá cumplir a nivel de carácterísticas, funcionalidades y módulos. (clase 2). | ? | ? | ? |
