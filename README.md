@@ -66,5 +66,5 @@ Al finalizar el cuatrimestre el estudiante desarrollará y desplegará una aplic
 | 1. ... | ? | ? | ? |
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
-| **PRIMER PARCIAL** | | 🤓 | |
+| **PRIMER PARCIAL** | ? | ? | ? |
 | 1. ¿Qué proyecto voy a desarrollar? Define el MVP (Minimum Viable Product) que tu proyecto deberá cumplir a nivel de carácterísticas, funcionalidades y módulos. (clase 2). | ? | ? | ? |
