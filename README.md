@@ -14,9 +14,9 @@
 * Oscar
   * oscaryordi@hotmail.com
   * [GitHub]()
-* Christhoper
+* Christopher
   * cvz.tnk@gmail.com
-  * [GitHub]()
+  * [GitHub](https://github.com/YukiMinamiHHNii/CN--Iraiban)
 
 ## Materias:
 
