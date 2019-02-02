@@ -67,5 +67,5 @@ Al finalizar el cuatrimestre el estudiante desarrollará y desplegará una aplic
 | **SEGUNDO PARCIAL** | ? | ? | ? |
 | 1. ... | ? | ? | ? |
 | **PRIMER PARCIAL** | ? | ? | ? |
-| 2. Crear un repositorio en GitHub para tu proyecto y agregar un README.md explicando la propuesta de tu MVP, si no sabes usar MarkDown aprende en este [enlace](https://joedicastro.com/pages/markdown.html) (clase 2). | ? | ? | ? |
-| 1. ¿Qué proyecto voy a desarrollar? Define el MVP (Minimum Viable Product) que tu proyecto deberá cumplir a nivel de carácterísticas, funcionalidades y módulos. (clase 2). | ? | ? | ? |
+| 2. Crear un repositorio en GitHub para tu proyecto y agregar un README.md explicando la propuesta de tu MVP, si no sabes usar MarkDown aprende en este [enlace](https://joedicastro.com/pages/markdown.html)<br>(clase 2). | ? | ? | ? |
+| 1. ¿Qué proyecto voy a desarrollar? Define el MVP (Minimum Viable Product) que tu proyecto deberá cumplir a nivel de carácterísticas, funcionalidades y módulos.<br>(clase 2). | ? | ? | ? |
